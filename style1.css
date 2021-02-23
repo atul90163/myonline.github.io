@@ -1,0 +1,153 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:sans-serif;
+}
+header{
+	width:100%;
+	height:100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)) , url('images/hands.jpg');
+	
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+	}
+nav{
+	width:100%;
+	height:15vh;
+	background:rgba(0,0,0,0.2);
+	color:white;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	text-transform:uppercase;
+}
+nav .logo
+{
+	width:25%;
+	text-align:center;
+}
+nav .menu{
+	width:30%;
+	text-align:center;
+	display:flex;
+	justify-content:space-around;
+	
+}
+nav .menu a{
+	width:25%;
+	text-decoration:none;
+	color:white;
+	font-weight:bold;
+	
+}
+nav .menu a:hover{
+	color:aqua;
+	
+}
+
+nav .menu a:first-child{
+	color:red;
+} 
+nav .menu a:first-child:hover{
+	/* color:#fff; */
+} 
+main{
+	width:100%;
+	height:85vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	color:white;
+}
+section {
+	
+}
+section h3{
+	font-size:35px;
+	font-weight:200;
+	letter-spacing:3px;
+	text-shadow:1px 1px 2px red;  
+}
+section h1{
+	margin:30px 0 20px 0;
+	font-size:55px;
+	font-weight:700;
+	text-shadow:2px 1px 5px red;
+	text-tranform:uppercase;
+	
+}
+section p{
+	font-size:25px;
+	color:#eee;
+	word-spacing:2px;
+	
+	margin-bottom:25px;
+	
+	text-shadow:1px 1px 1px red;
+	
+}
+section a{
+	padding:12px 30px;
+	border-radius:4px;
+	text-transform: uppercasae;
+	font-size:13px;
+	font-weight:500;
+	text-decoration: none;
+	letter-spacing:1px;
+	outline:none;
+	transition : all .55s ease;
+	
+}
+
+section .btn1{
+ /*	background:#00b894; */
+ background:#00b894;
+ /* fff is code of white color */
+ color:#000;
+	
+ 
+}
+section .btn1:hover{
+	
+	background:#fff; 
+/* background:#fff; */
+ /* fff is code of white color */
+ color:#000;
+/* background:red; */
+
+}
+section .btn2{
+ background:red; 
+/* background:#fff; */
+ /* fff is code of white color */
+ color:#000;
+/* background:red; */
+	
+ 
+}
+section .btn2:hover{
+	/*	background:#00b894; */
+ background:#fff;
+ /* fff is code of white color */
+ color:#000;
+
+	
+}
+.changecontent:after{
+	content:'';
+	animation:change_text 10s infinite linear;
+	color:#00b894; 
+
+	
+}
+@keyframes change_text{
+	0%{content:'1 Time';}
+	20%{content:'2 Time';}
+	35%{content:'3 Time';}
+	60%{content:'4 Time';}
+	80%{content:'5 Time';}
+	100%{content:'6 Time';}
+}
